@@ -1,0 +1,16 @@
+{
+  "name": "sample",
+  "author": "Pablo",
+  "version": "0.0.1",
+  "description": "A sample Node.js app",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo Building"
+    "testing": "echo testing"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "lodash":" "*"
+  },
+  "license": "MIT"
+}
