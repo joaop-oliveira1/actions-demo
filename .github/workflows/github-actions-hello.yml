@@ -3,11 +3,20 @@ on:
   push:
     branches:
       - staging
+      - main
 jobs:
-  Explore-GitHub-Actions:
+  staging-deploy:
+    name: "Staging Deploy"
+    if: github.ref_name == 'staging'
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 Hello World"
-      - run: echo "Building my project Fors Testing...."
+      - run: echo "Building my project For Testing...."
+      
+  production-deploy:
+    name: "Production Deploy"
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building my project For Production...."
 
 
