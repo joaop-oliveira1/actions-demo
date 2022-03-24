@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Hello World"
-      - run: echo "Building my project...."
+      - run: echo "Building my project Fors Testing...."
 
 
