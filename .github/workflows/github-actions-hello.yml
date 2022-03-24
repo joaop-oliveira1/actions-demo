@@ -25,6 +25,14 @@ jobs:
     if: github.ref_name == 'main'
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Building my project For Production...."
+      - uses: actions/checkout@v3
+        name: Check out repository
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+        name: Set up Node.js
+      - run: ls -l
+      - run: npm i
+      - run: npm run build
 
 
