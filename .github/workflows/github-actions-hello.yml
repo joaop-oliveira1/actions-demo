@@ -7,10 +7,10 @@ on:
 jobs:
   staging-deploy:
     name: "Staging Deploy"
+    if: github.ref_name == 'staging'
     runs-on: ubuntu-latest
     steps:
       - run: echo "Building my project For Testing...."
-      - run: echo "${{ github.ref_name }}"
       
   production-deploy:
     name: "Production Deploy"
