@@ -5,12 +5,12 @@
   "description": "A sample Node.js app",
   "main": "index.js",
   "scripts": {
-    "build": "echo Building"
-    "testing": "echo testing"
+    "build": "echo Building",
+    "testing": "echo testing",
     "start": "node index.js"
   },
   "dependencies": {
-    "lodash":" "*"
+    "lodash": "4.0.0"
   },
   "license": "MIT"
 }
